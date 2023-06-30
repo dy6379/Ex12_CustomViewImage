@@ -1,0 +1,16 @@
+package com.busanit.ex12_customviewimage;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+//        setContentView(R.layout.activity_main);
+        CustomImage view = new CustomImage(this);
+        setContentView(view);
+    }
+}
